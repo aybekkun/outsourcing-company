@@ -1,0 +1,142 @@
+.footer {
+  padding-top: 110px;
+  background-color: rgba($black, 0.9);
+  color: $white;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 110px;
+  }
+  .logo {
+    display: block;
+    margin-bottom: 40px;
+  }
+  &__box {
+    width: 45%;
+    padding: 20px;
+  }
+  &__text {
+    max-width: 520px;
+    margin: 20px 0;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    color: $white;
+  }
+  &__support {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    color: #b589e0;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  &__date {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+    text-transform: uppercase;
+    color: $white;
+    margin-bottom: 40px;
+  }
+  &__link {
+    display: block;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    color: $white;
+    margin-bottom: 20px;
+  }
+  &__title {
+    color: rgba(255, 221, 101, 1);
+    margin-bottom: 50px;
+  }
+
+  input {
+    display: block;
+    width: 100%;
+    padding: 30px;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  button {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.3;
+    color: $white;
+    background: #5ca7ff;
+    padding: 30px 100px;
+  }
+  &__bottom {
+    background-color: $black;
+  }
+}
+.footer__bottom {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+  }
+}
+.social__list {
+  display: flex;
+  &-item + .social__list-item {
+    margin-left: 10px;
+  }
+  &-item {
+    width: 40px;
+    height: 40px;
+  }
+  &-link {
+    display: block;
+    height: 100%;
+    width: 100%;
+    svg {
+      path {
+        fill: $white;
+      }
+    }
+  }
+}
+@media (max-width: 1050px) {
+  .footer {
+    padding-top: 30px;
+    &__title{
+      margin-bottom: 30px;
+    }
+    &__inner{
+      padding-bottom: 40px;
+    }
+    &__text{
+      font-size: 18px;
+    }
+    &__date{
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    &__link{
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    input{
+      padding: 15px;
+    }
+    button{
+      padding: 15px 30px;
+    }
+  }
+}
+@media (max-width: 950px) {
+  .footer {
+    &__inner{
+      display: block;
+    }
+    &__box{
+      width: 100%;
+    }
+  }
+}
